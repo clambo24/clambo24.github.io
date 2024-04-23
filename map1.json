@@ -43,7 +43,7 @@
     },
     "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "value", "title": "", "format": "$,d"}
+      {"field": "value", "title": "", "format": "MtCO2,d"}
     ]
   }
 }
