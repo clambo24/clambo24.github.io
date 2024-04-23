@@ -1,0 +1,24 @@
+ 
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Unemployment rate",
+    "subtitle": ["%", "Source: STATCAN through ECO API"]
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "data": {"url": "https://api.economicsobservatory.com/can/unem?vega"},
+
+  "mark": {
+    "type": "line",
+    "color": "#36B7B4",
+    "size": 3},
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  }
+}
