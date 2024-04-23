@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/CCCcsv.json",
+ 
+  "title": {"text": "Change in UK emissions for key sectors (2021 to 2022"},
+ 
+  "width": 300,
+  "height": 200,
+   
+  "data": {
+    "values": [
+        {"Sector": "Surface transport","Change in emissions": 3},
+        {"Sector": "Aviation","Change in emissions": 14},
+        {"Sector": "Electricity supply","Change in emissions": -1},
+        {"Sector": "Industry","Change in emissions": 2},
+        {"Sector": "Non-res buildings","Change in emissions": -2},
+        {"Sector": "Non-res buildings (temp adjusted)","Change in emissions": 1.01}
+        {"Sector": "Res buildings","Change in emissions": -11}
+        {"Sector": "Res buildings (temp adjusted)","Change in emissions": -4.03}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "#8C57CC"},
+ 
+  "encoding": {
+    "x": {"field": "Sector"},  
+ 
+    "y": {
+      "field": "Change in emissions",
+      "type": "quantitative"}}
+}
