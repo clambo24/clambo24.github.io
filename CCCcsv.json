@@ -15,7 +15,15 @@
         {"Sector": "Non-res buildings","Change in emissions": -2},
         {"Sector": "Non-res buildings (temp adjusted)","Change in emissions": 1.01},
         {"Sector": "Res buildings","Change in emissions": -11},
-        {"Sector": "Res buildings (temp adjusted)","Change in emissions": -4.03}]
+        {"Sector": "Res buildings (temp adjusted)","Change in emissions": -4.03},
+        {"Sector": "Surface transport","% Change 2021-22": "+3%"},
+        {"Sector": "Aviation","% Change 2021-22": "+95%"},
+        {"Sector": "Electricity supply","% Change 2021-22": "-1%"},
+        {"Sector": "Industry","% Change 2021-22": "+6%"},
+        {"Sector": "Non-res buildings","% Change 2021-22": "-3%"},
+        {"Sector": "Non-res buildings (temp adjusted)","% Change 2021-22": "+5%"},
+        {"Sector": "Res buildings","% Change 2021-22": "-16%"},
+        {"Sector": "Res buildings (temp adjusted)","% Change 2021-22": "+6%"}]
   },
  
   "mark": {
@@ -27,5 +35,11 @@
  
     "y": {
       "field": "Change in emissions",
-      "type": "quantitative"}}
+      "type": "quantitative"},
+
+    "tooltip": [
+      {"field": "% Change 2021-22",
+      "type": "nominal"}
+    ]
+  }
 }
