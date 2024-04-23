@@ -1,0 +1,444 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "data": {"name": "data-9df431bc511d54bf43499dfc5fccb213"},
+  "facet": {
+    "column": {
+      "field": "Subject",
+      "header": {
+        "labelAnchor": "middle",
+        "labelAngle": 0,
+        "labelFontSize": 12,
+        "title": null
+      },
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "mark": {"type": "line", "point": true},
+    "encoding": {
+      "color": {
+        "field": "Jurisdiction",
+        "legend": {
+          "direction": "horizontal",
+          "legendX": 0,
+          "legendY": -16,
+          "orient": "none",
+          "title": null
+        },
+        "type": "nominal"
+      },
+      "x": {
+        "axis": {"labelAngle": 0, "title": null},
+        "field": "Year",
+        "type": "ordinal"
+      },
+      "y": {
+        "field": "Score",
+        "scale": {"domain": [460, 520]},
+        "title": null,
+        "type": "quantitative"
+      }
+    },
+    "height": 180,
+    "width": 180
+  },
+  "title": {
+    "text": "Student Performance",
+    "color": "#676A86",
+    "dx": 0,
+    "fontSize": 14,
+    "offset": 0,
+    "subtitle": ["Source: PISA Test Scores (OECD)", "", ""],
+    "subtitleFontSize": 12
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-9df431bc511d54bf43499dfc5fccb213": [
+      {
+        "Year": 2022,
+        "Jurisdiction": "OECD Average",
+        "Score": 475.5888735,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "UK",
+        "Score": 494.4046261,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "Scotland",
+        "Score": 492.7764838,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "OECD Average",
+        "Score": 485.4874063,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "UK",
+        "Score": 503.9281094,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "Scotland",
+        "Score": 503.9827505,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "OECD Average",
+        "Score": 488.5266081,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "UK",
+        "Score": 497.9719311,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "Scotland",
+        "Score": 493.1846588,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "OECD Average",
+        "Score": 491.8212067,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "UK",
+        "Score": 499.3231153,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "Scotland",
+        "Score": 506.1284265,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "OECD Average",
+        "Score": 490.3437924,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "UK",
+        "Score": 494.18201,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "Scotland",
+        "Score": 500.1053337,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "OECD Average",
+        "Score": 485.3536053,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "UK",
+        "Score": 495.0835096,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "Scotland",
+        "Score": 498.7651065,
+        "Subject": "Reading"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "OECD Average",
+        "Score": 472.3581246,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "UK",
+        "Score": 488.975085,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "Scotland",
+        "Score": 470.6216169,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "OECD Average",
+        "Score": 486.998322,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "UK",
+        "Score": 501.7698992,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "Scotland",
+        "Score": 488.9446447,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "OECD Average",
+        "Score": 484.8793967,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "UK",
+        "Score": 492.4785307,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "Scotland",
+        "Score": 491.1646422,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "OECD Average",
+        "Score": 488.1641537,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "UK",
+        "Score": 493.934231,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "Scotland",
+        "Score": 498.4428013,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "OECD Average",
+        "Score": 491.7185799,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "UK",
+        "Score": 492.4140783,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "Scotland",
+        "Score": 499.0189992,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "OECD Average",
+        "Score": 490.4076084,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "UK",
+        "Score": 495.4441585,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "Scotland",
+        "Score": 505.7123966,
+        "Subject": "Mathematics"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "OECD Average",
+        "Score": 484.6466145,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "UK",
+        "Score": 499.6702139,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2022,
+        "Jurisdiction": "Scotland",
+        "Score": 483.3097374,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "OECD Average",
+        "Score": 486.7402743,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "UK",
+        "Score": 504.6674736,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2018,
+        "Jurisdiction": "Scotland",
+        "Score": 490.2546724,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "OECD Average",
+        "Score": 488.7580445,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "UK",
+        "Score": 509.2215029,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2015,
+        "Jurisdiction": "Scotland",
+        "Score": 496.7553125,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "OECD Average",
+        "Score": 496.4405107,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "UK",
+        "Score": 514.129322,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2012,
+        "Jurisdiction": "Scotland",
+        "Score": 513.4272372,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "OECD Average",
+        "Score": 497.7225644,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "UK",
+        "Score": 513.7102399,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2009,
+        "Jurisdiction": "Scotland",
+        "Score": 514.2279303,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "OECD Average",
+        "Score": 494.8049175,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "UK",
+        "Score": 514.7735479,
+        "Subject": "Science"
+      },
+      {
+        "Year": 2006,
+        "Jurisdiction": "Scotland",
+        "Score": 514.7354375,
+        "Subject": "Science"
+      }
+    ]
+  },
+  "width": "container",
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}
