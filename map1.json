@@ -1,45 +1,49 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A map of UK population by ITL1 (formerly NUT1) region. Using ONS 2019 data.",
+  "description": "World CO2 emissions.",
   "title": {
-    "text": "UK Population",
-    "subtitle": ["International Territorial Level 1", "Source: ONS"],
+    "text": "World CO2 emissions 2021",
+    "subtitle": ["Source: World Bank"],
     "fontSize": 16,
     "subtitleFontSize": 12,
     "subtitleFontWeight": "lighter",
     "anchor": "middle"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/uk_itl1.geojson",
+    "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
     "format": {"property": "features"}
   },
-  "width": 300,
-  "height": 400,
+  "width": 600,
+  "height": 330,
   "transform": [
     {
-      "lookup": "properties.ITL121CD",
+      "lookup": "properties.ISO3",
       "from": {
-        "key": "ITL code",
-        "fields": ["name", "value"],
+        "key": "ISO3",
+        "fields": ["value", "date"],
         "data": {
-          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/4/map_data/uk_itl1_population.csv"
+          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/4/map_data/world_co2_emissions_wb.csv"
         }
       }
     }
   ],
-  "projection": {"type": "mercator"},
-  "mark": "geoshape",
+ "projection": {
+    "type": "naturalEarth1",
+    "scale": 125,
+    "translate": [285, 180]
+  },
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
   "encoding": {
     "color": {
+      "condition": {"value": "lightgrey", "test": "!datum['value']"},
       "field": "value",
       "type": "quantitative",
-      "scale": {"scheme": "goldorange"},
-      "legend": {"title": ""}
+      "legend": {"title": "", "format": "$,d"},
+      "scale": {"type": "log", "scheme": "viridis", "reverse": false}
     },
     "tooltip": [
-      {"field": "properties.ITL121NM", "title": "Region"},
-      {"field": "value", "title": "Population", "format": ","}
+      {"field": "country", "title": "Country"},
+      {"field": "value", "title": "", "format": "$,d"}
     ]
-  },
-  "config": {}
+  }
 }
