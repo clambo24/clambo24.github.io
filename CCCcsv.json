@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/CCCcsv.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  
   "title": {"text": "Change in UK emissions for key sectors (2021 to 2022"},
  
@@ -7,23 +7,7 @@
   "height": 350,
    
   "data": {
-    "values": [
-        {"Sector": "Surface transport","Change in emissions": 3},
-        {"Sector": "Aviation","Change in emissions": 14},
-        {"Sector": "Electricity supply","Change in emissions": -1},
-        {"Sector": "Industry","Change in emissions": 2},
-        {"Sector": "Non-res buildings","Change in emissions": -2},
-        {"Sector": "Non-res buildings (temp adjusted)","Change in emissions": 1.01},
-        {"Sector": "Res buildings","Change in emissions": -11},
-        {"Sector": "Res buildings (temp adjusted)","Change in emissions": -4.03},
-        {"Sector": "Surface transport","% Change 2021-22": "+3%"},
-        {"Sector": "Aviation","% Change 2021-22": "+95%"},
-        {"Sector": "Electricity supply","% Change 2021-22": "-1%"},
-        {"Sector": "Industry","% Change 2021-22": "+6%"},
-        {"Sector": "Non-res buildings","% Change 2021-22": "-3%"},
-        {"Sector": "Non-res buildings (temp adjusted)","% Change 2021-22": "+5%"},
-        {"Sector": "Res buildings","% Change 2021-22": "-16%"},
-        {"Sector": "Res buildings (temp adjusted)","% Change 2021-22": "+6%"}]
+    "url": "https://raw.githubusercontent.com/clambo24/clambo24.github.io/main/CCCcsv.csv"
   },
  
   "mark": {
@@ -31,15 +15,15 @@
     "color": "#8C57CC"},
  
   "encoding": {
-    "x": {"field": "Sector"},  
+    "x": {"field": "Labels"},  
  
     "y": {
-      "field": "Change in emissions",
+      "field": "2021-2022",
       "type": "quantitative"},
-
-    "tooltip": [
-      {"field": "% Change 2021-22",
-      "type": "nominal"}
-    ]
-  }
+    
+      "tooltip": [
+        {"field": "% 2021-2022",
+        "type": "nominal"}
+      ]
+    }
 }
